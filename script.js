@@ -39,12 +39,12 @@ function displayArticles() {
         url: queryURL,
         method: "GET"
     }).then(function(response){
-        $('#movie-info').html(JSON.stringify(response));
+        $('#results-div').html(JSON.stringify(response));
     });
     
     // limit number of results by returning data based on index# ??? e.g. 1 article is index 0, 5 is index 4, 10 is automatically shown from API
-    var recordsToGet = $('#numOfRecords > option').click(function () {
-            $(this).text()});
+    // var recordsToGet = $('#numOfRecords > option').click(function () {
+    //         $(this).text()});
  }
 
 // click handlers for search & clear results buttons
