@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Font Awesome Icons Kit -->
+    <script src="https://kit.fontawesome.com/1cc89988c1.js" crossorigin="anonymous"></script>
+
+    <title>New York Times Search</title>
+
+    <!-- CSS for Borders -->
+    <style>
+        #header {
+            border: 1px solid black;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        #topArticlesFullBorder {
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+        #topArticleHeader {
+            border: 1px solid black;
+        }
+
+        #resultsBorder {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Site Heading -->
+    <div class="container">
+        <header id="header" class="bg-dark sticky-top mb-5 margin-auto text-center">
+            <h1 class="text-white text-center"><i class="fa fa-newspaper-o"></i> New York Times Search</h1>
+        </header>
+    </div>
+
+    <!--Search Form  -->
+    <div class="container">
+        <div class="card">
+            <div class="card-header text-white" style="background-color: darkslategrey;">
+                <i class="fas fa-th-list"></i> Search Parameters
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="search-input">Search Term:</label>
+                        <input id="search-input" class="form-control form-fields" type="search" placeholder="Ex: Roosevelt">
+                    </div>
+                    <div class="form-group">
+                        <label for="numOfRecords">Number of Records to Retrieve:</label>
+                        <select id="numOfRecords" class="form-control">
+                            <option>1</option>
+                            <option>5</option>
+                            <option>10</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="startYear">Start Year (Optional):</label>
+                        <input id="startYear" class="form-control form-fields" type="number" placeholder="Ex: 1925">
+                    </div>
+                    <div class="form-group">
+                        <label for="endYear">End Year (Optional):</label>
+                        <input id="endYear" class="form-control form-fields" type="number" placeholder="Ex: 2010">
+                    </div>
+                    <button id="submit-search" class="btn btn-secondary mr-3 my-2" type="submit"><i class="fas fa-search"></i>
+                        Submit</button>
+                    <button id="clear-results" class="btn btn-secondary my-2" type="clear"><i class="far fa-trash-alt"></i> Clear
+                        Results</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Results Container -->
+    <div id="Articles" class="container mt-5">
+        <div id="topArticlesFullBorder">
+            <header id="topArticlesHeader" class="text-white bg-dark w-100 pl-3">
+                <i class="fas fa-list-ol"></i> Top Articles
+            </header>
+            <div id="resultsBorder">
+                <div id="results-div" class="bg-light p-3">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis laboriosam fugit quisquam aliquam
+                    illo, sed assumenda cum vero tempora, ex atque! Quas similique dolores libero. Officiis sed cumque
+                    dolore neque.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
