@@ -13,34 +13,12 @@
     <script src="https://kit.fontawesome.com/1cc89988c1.js" crossorigin="anonymous"></script>
 
     <title>New York Times Search</title>
-
-    <!-- CSS for Borders -->
-    <style>
-        #header {
-            border: 1px solid black;
-            border-bottom-left-radius: 5px;
-            border-bottom-right-radius: 5px;
-        }
-
-        #topArticlesFullBorder {
-            border: 1px solid black;
-            border-radius: 5px;
-        }
-
-        #topArticleHeader {
-            border: 1px solid black;
-        }
-
-        #resultsBorder {
-            border: 1px solid black;
-        }
-    </style>
 </head>
 
 <body>
     <!-- Site Heading -->
     <div class="container">
-        <header id="header" class="bg-dark sticky-top mb-5 margin-auto text-center">
+        <header class="sticky-top mb-5 margin-auto text-center" style="border: 1px solid grey; background-color:darkslategrey; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px">
             <h1 class="text-white text-center"><i class="fa fa-newspaper-o"></i> New York Times Search</h1>
         </header>
     </div>
@@ -73,7 +51,7 @@
                         <label for="endYear">End Year (Optional):</label>
                         <input id="endYear" class="form-control form-fields" type="number" placeholder="Ex: 2010">
                     </div>
-                    <button id="submit-search" class="btn btn-secondary mr-3 my-2" type="submit"><i class="fas fa-search"></i>
+                    <button id="submit-search" class="btn btn-info mr-3 my-2" type="submit"><i class="fas fa-search"></i>
                         Submit</button>
                     <button id="clear-results" class="btn btn-secondary my-2" type="clear"><i class="far fa-trash-alt"></i> Clear
                         Results</button>
@@ -84,18 +62,16 @@
 
 
     <!-- Results Container -->
-    <div id="Articles" class="container mt-5">
-        <div id="topArticlesFullBorder">
-            <header id="topArticlesHeader" class="text-white bg-dark w-100 pl-3">
+    <div id="Articles" class="container mt-5 mb-5">
+        <div id="topArticlesBorder" style="border:1px solid grey; background-color:darkslategrey">
+            <header id="topArticlesHeader" class="text-white w-100 pl-3">
                 <i class="fas fa-list-ol"></i> Top Articles
             </header>
-            <div id="resultsBorder">
                 <div id="results-div" class="bg-light p-3">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis laboriosam fugit quisquam aliquam
                     illo, sed assumenda cum vero tempora, ex atque! Quas similique dolores libero. Officiis sed cumque
                     dolore neque.
                 </div>
-            </div>
         </div>
     </div>
 
@@ -103,8 +79,8 @@
 
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
